@@ -1,0 +1,559 @@
+body
+{
+    /*font-family: serif;*/
+    font-family: 'Noto Serif', serif;
+    font-size:14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+p, ph {
+    color: #000;
+    margin: 8px 0px 10px;
+    line-height: 1.3;
+}
+
+/*td p {
+    margin: 6px 0px 6px;
+}
+
+th p {
+    margin: 3px 0px;
+}*/
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.title
+{
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    color: #1d3560;
+    font-size:26px;
+    font-weight: 500;
+    padding: 0px 0px 8px;
+    margin: 15px 0px 11px;
+    border-bottom: 2px solid #283f67;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.content
+{
+    width: 100%;
+    float: left;
+    padding-left: 54px;
+}
+
+.content .section {
+    padding-left: 0;
+}
+
+.content > table:first-child {
+    margin-top: 15px;
+}
+
+.fig
+{
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.fig img {
+    margin: 5px 0px 0px;
+    width: 100%;
+}
+
+.figtitle
+{
+  font-weight: 700;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.section
+{
+    /*margin: 18px 0px;*/
+    padding-left: 54px;
+}
+
+.section:last-child {
+    margin:20px 0px 0px;
+}
+
+.sectiontitle
+{
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 10px 0 13px;
+}
+
+.sectiontitle + ul {
+  margin-top: 0;
+}
+
+.sectiontitle + ul li:first-child {
+  margin-top: 0;
+}
+
+.noteinline
+{
+  font-weight: 700;
+}
+
+/* check page 127 â MISE EN GARDE ! and  â AVERTISSEMENT */
+/*.note
+{
+    float: left;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+.noteheader
+{
+    border: 1px solid #000;
+    padding: 4px 15px;
+    font-weight: 700;
+}
+
+.notebody
+{
+    border: 1px solid #000;
+    padding: 0px 13px;
+}*/
+
+table
+{
+    border-collapse: collapse;
+}
+
+table + p {
+    margin-top: 30px;
+}
+
+table td {
+    border: 1px solid #000;
+    padding: 5px 12px;
+}
+
+table th {
+    border: 1px solid #000;
+    padding: 5px 12px;
+}
+
+.sectiontitle + table {
+    margin-top: 15px;
+}
+
+table ul li:before {
+  bottom: 6px;
+}
+
+ul,
+steps,
+parml,
+dl
+{
+    text-align: left;
+    padding: 0px 0px 0px 17px;
+    list-style-type: none;
+    /*margin: 6px 0px;*/
+    margin: 0;
+    width: 100%;
+    /*float: left;*/
+    display: block;
+}
+
+ul > li,
+parml > plentry,
+steps > step,
+dl > dlentry
+{
+    display: block;
+    padding-left: 5px;
+    margin: 8px 0;
+    position: relative;
+}
+
+parml > plentry > pt,
+dl > dlentry > dt {
+  font-weight: bold;
+}
+
+dl > dlentry > dt {
+  display: inline-block;
+  float: left;
+}
+
+ul > li:before,
+parml > plentry:before,
+dl > dlentry:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    border-radius: 50%;
+    top: 8px;
+    left: -15px;
+    background: #000;
+}
+
+/*ul:nth-child(odd) > li:before {
+  background: transparent;
+  width: 3px;
+  height: 3px;
+  border: 1px solid black;
+}*/
+
+p + ul {
+  margin-top: 0;
+}
+
+p + ul > li:first-child {
+  margin-top: 0;
+}
+
+.section ul + .note {
+  margin-top: 0;
+}
+
+/*ul > li > p {
+    margin: 0px;
+}*/
+
+ol.circles-list,
+{
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+
+    margin: 0;
+    margin-left: 4em;
+    padding: 0;
+
+    counter-reset: li-counter;
+}
+
+ol.circles-list > li,
+{
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 0.5em;
+    min-height: 1em;
+}
+
+ol.circles-list > li:before ,
+{
+    position: absolute;
+    top: 0;
+    left: -1.33em;
+    width: 1.2em;
+    height: 1.2em;
+
+    font-size: 1.0em;
+    line-height: 1.2;
+    text-align: center;
+    color: black;
+
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+.two-column
+{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  clear: both;
+}
+
+shortdesc, 
+taskbody {
+  display: block;
+  padding-left: 54px;
+}
+
+prolog,
+example {
+  display: none;
+}
+
+shortdesc {
+  font-size: 14px;
+}
+
+taskbody {
+  margin-top: 10px;
+}
+
+.note,
+.section .note {
+  display: block;
+  margin: 0 0 20px;
+  /*margin: 20px 0;*/
+}
+
+.note .noteheader,
+.section .note .noteheader {
+  display: inline;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+}
+
+.note .noteheader[type="important"],
+.section .note .noteheader[type="important"] {
+  color: #ff9300;
+}
+
+.note .noteheader[type="warning"],
+.section .note .noteheader[type="warning"] {
+  color: #ff3103;
+}
+
+.note .noteheader:after,
+.section .note .noteheader:after {
+  content: ':';
+  display: inline-block;
+  color: black;
+}
+
+.note .notebody,
+.section .note .notebody {
+  display: inline;
+  padding: 0;
+  border: none;
+}
+
+.section .link {
+  color: #008bda;
+  cursor: pointer;
+}
+
+img {
+  margin: 5px 0;
+}
+
+p img {
+  display: block;
+}
+
+table {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+table th {
+  background: #1d355f;
+  color: white;
+  text-align: left;
+  border: none;
+  padding: 6px 5px 8px;
+  font-weight: 400;
+}
+
+table tr {
+  border-bottom: 2px solid #1d355f;
+}
+
+table tr:first-child {
+  border-top: 2px solid #1d355f; 
+}
+
+table td {
+  border: none;
+  padding: 5px 5px;
+  vertical-align: top;
+}
+
+table td p {
+  /*float: left;*/
+  margin: 6px 0;
+  display: block;
+}
+
+table img {
+  margin: 0;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+table td:first-child img {
+  margin: 0;
+  margin-right: 3px;
+  float: left;
+  vertical-align: top;
+}
+
+filepath, 
+wintitle {
+  font-style: italic;
+}
+
+uicontrol {
+  font-weight: bold;
+}
+
+term {
+  color: #008bda;
+  cursor: pointer;
+  font-style: italic;
+}
+
+codeph {
+  font-family: monospace;
+}
+
+steps stepsection {
+  display: block;
+  font-weight: bold;
+  /* good for "Reviewing media" */
+  counter-reset: li-counter;
+}
+
+steps
+{
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+
+    margin: 0;
+    /*margin-left: 4em;*/
+    padding: 0;
+    padding-left: 20px;
+
+    counter-reset: li-counter;
+}
+
+steps > step > substeps {
+  display: block;
+  list-style-type: none;
+  list-style-type: decimal !ie; /*IE 7- hack*/
+  margin: 0;
+  /*margin-left: 4em;*/
+  padding: 0;
+  padding-left: 20px;
+
+  counter-reset: lower-alpha;
+}
+
+steps stepsection {
+  position: relative;
+  left: -20px;
+  margin-top: 10px;
+}
+
+steps > step,
+steps > step > substeps > substep {
+  list-style-type: lower-alpha;
+  display: block;
+  padding-left: 0;
+  margin: 4px 0;
+}
+
+substeps > substep > cmd,
+substeps > substep > info {
+  display: block;
+}
+
+steps > step:before
+{
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    padding-right: 10px;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+steps > step > substeps > substep:before
+{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding-right: 10px;
+    content: counter(lower-alpha, lower-alpha)")";
+    counter-increment: lower-alpha;
+}
+
+steps > step > stepresult {
+  display: block;
+  /*padding-left: 24px;*/
+}
+
+context img,
+steps img,
+steps > step > cmd > img,
+steps > step > substeps > substep > img {
+  vertical-align: middle;
+  margin: 0;
+}
+
+context + steps {
+  margin: 8px 0;
+}
+
+result {
+  display: block;
+}
+
+choices
+{
+    text-align: left;
+    margin: 0;
+    margin-left: 35px;
+    padding: 0;
+
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+choices > choice
+{   
+    display: block;
+    padding-left: 5px;
+    margin: 8px 0;
+}
+
+choices > choice:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    position: relative;
+    border-radius: 50%;
+    top: -3px;
+    left: -15px;
+    background: #000;
+}
+
+choices > choice > span.link {
+  color: #008bda;
+  cursor: pointer;
+}
+
+info option {
+  display: inline-block;
+}
+
+span.link {
+  color: #008bda;
+  cursor: pointer;
+}
+
+.conkeyref {
+	color: SlateBlue
+}
